@@ -5,6 +5,14 @@
   section {
     width: 95%;
   }
+  .three-column-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    justify-items: center;
+  }
+
+  /* HEADER */
   #hero {
     max-width: 100%;
     height: auto;
@@ -19,47 +27,44 @@
       display: none;
     }
   }
-  .three-column-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-content: center;
-    justify-items: center;
-  }
+
+  /* Courses */
   .course-containter {
     display: block;
     margin-bottom: 10rem;
+    .course-overlay {
+      visibility: hidden;
+    }
   }
-  .course-image {
-    display: block;
-  }
+
   a .course-mobile-subheader {
     visibility: visible;
     color: #757575;
   }
-  .course-overlay {
-    visibility: hidden;
-  }
+
+  /* Email List */
   #course-column-email {
     display: flex;
     flex-flow: wrap;
     margin: auto;
     text-align: center;
-  }
-  input {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    width: 100%;
-    text-align: center;
-  }
-  #email-submit-btn {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    width: 100%;
+    input {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+    }
+    #email-submit-btn {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      width: 100%;
+    }
   }
 
+  /* Footer */
   #copyright {
-    margin-top: 20px;
+    padding-top: 20px;
   }
 }
