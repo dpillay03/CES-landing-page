@@ -17,7 +17,11 @@
             <img src="./assets/New-Logo-gray-tagline-red.png" alt="CE Shop Logo Gray and Red" id="logo" /> 
             <h1 class="h1" id="hero-header">Your One-Stop Shop for Real Estate, Mortgage, and Home Inspection Education</h1>
             <h2 id="hero-subheader" class="h2">The CE Shop offers the professional coursework you need to succeed. </h2>
-            <button>Start Your Journey</button>
+            <div id="btn-wrapper">
+                <a href="#courses">
+                 <button class="btn">Start Your Journey</button>
+                </a>
+            </div>
         </div>
         <div class="hero-column">
             <img src="./assets/hero_image.png" alt="home hero header image" id="hero-image" /> 
@@ -26,65 +30,130 @@
     <!--Courses Section-->
     <section>
         <h2 class="h2">Expand Your Expertise With The CE Shop</h2>
-        <p class="p">Our award-winning curriculum was designed with your long-term success in mind. Whether you’re just starting your career or you’ve been in the business for decades, we’ll help you take your expertise to the next level with our educational offerings: </p>
+        <hr  />
+        <p class="p" id="courses">Our award-winning curriculum was designed with your long-term success in mind. Whether you’re just starting your career or you’ve been in the business for decades, we’ll help you take your expertise to the next level with our educational offerings: </p>
         <div class="three-column-grid">
-            <img src="https://via.placeholder.com/250" alt="real estate courses" class="course-image" /> 
-            <img src="https://via.placeholder.com/250" alt="mortgage courses" class="course-image" /> 
-            <img src="https://via.placeholder.com/250" alt="home inspection courses" class="course-image" /> 
+            <a href="#" target="_blank">
+            <div class="course-containter">
+                <!--Real Estate Course-->
+                <img src="./assets/real-estate.png" alt="real estate courses" class="course-image" /> 
+                  <div class="course-title">Real Estate</div>
+                <div class="course-overlay">
+                    <img src="./assets/enrolled.png" alt="enrolled" class="course-enrolled" /> 
+                  <div class="course-desc"><p class="course-subheader">Give your career a boost with The CE Shop. We offer Pre-Licensing, Exam Prep, Post-Licensing, and Continuing Education, with online courses available in all 50 states and D.C.</p></div>
+                </div>
+                <p class="course-mobile-subheader">Give your career a boost with The CE Shop. We offer Pre-Licensing, Exam Prep, Post-Licensing, and Continuing Education, with online courses available in all 50 states and D.C.</p>
+            </div>
+            </a>
+
+            <a href="#" target="_blank">
+              <div class="course-containter">
+                <!--Mortgage Course-->
+                <img src="./assets/mortgage.png" alt="mortgage courses" class="course-image" /> 
+                  <div class="course-title">Mortgage</div>
+                <div class="course-overlay">
+                    <img src="./assets/enrolled.png" alt="enrolled" class="course-enrolled" /> 
+                  <div class="course-desc"><p class="course-subheader">The CE Shop’s NMLS-approved Pre-Licensure and Continuing Education courses, along with our interactive Exam Prep Edge study program, offer an innovative and results-driven online learning experience.</p></div>
+                </div>
+                <p class="course-mobile-subheader">The CE Shop’s NMLS-approved Pre-Licensure and Continuing Education courses, along with our interactive Exam Prep Edge study program, offer an innovative and results-driven online learning experience.</p>
+              </div>
+            </a>
+
+            <a href="#" target="_blank">
+              <div class="course-containter">
+                <!--Home Inspection Course-->
+                <img src="./assets/home_inspect.png" alt="home inspection courses" class="course-image" /> 
+                  <div class="course-title">Home Inspection</div>
+                <div class="course-overlay">
+                    <img src="./assets/enrolled.png" alt="enrolled" class="course-enrolled" /> 
+                  <div class="course-desc"><p class="course-subheader">Whether you’re looking to start a career in home inspection or you’re a home inspector looking to add services and develop new skills, The CE Shop is proud to offer both online and in-person courses through American Home Inspectors Training.</p></div>
+                </div>
+                <p class="course-mobile-subheader">Whether you’re looking to start a career in home inspection or you’re a home inspector looking to add services and develop new skills, The CE Shop is proud to offer both online and in-person courses through American Home Inspectors Training.</p>
+              </div>
+            </a>
         </div>
     </section>
 
 
     <section id="email-list">
-        <h2 class="h2">Get the Latest With Our Real Estate Newsletter</h2>
-        <div id="course-column-email">
+        <h2 class="h2">Stay Up to Date With Our Real Estate Newsletter</h2>
+        <div>
             <form action="#" id="course-column-email">
                 <input type="text" placeholder="Name"><br>
                 <input type="email" placeholder="Email"><br>
-                <input type="submit" value="Submit">
+                <input type="submit" value="Submit"  id="email-submit-btn" >
               </form> 
         </div>
     </section>
      <!--Why Choose Us Section-->
     <section>
-        <h2 class="h2">Why Choose Us</h2>
-        <p class="p">The CE Shop is committed to your success. Our methods is tailored to your growth </p>
+        <h2 class="h2">Why Choose The CE Shop</h2>
+        <hr  />
+        <p class="p">Whether you're an experienced professional, or someone interested in breaking into the industry; our courses are tailored for your success.</p>
         <div class="three-column-grid">
-            <img src="https://via.placeholder.com/250" alt="real estate courses" class="course-image" /> 
-            <img src="https://via.placeholder.com/250" alt="mortgage courses" class="course-image" /> 
-            <img src="https://via.placeholder.com/250" alt="home inspection courses" class="course-image" /> 
+            <div class="services-wrapper">
+                <img src="./assets/online_courses.png" alt="online courses" class="services-image" /> 
+                <p class="services-header">Online Courses</p>
+                <p class="services-subheader">All of our courses are available online 24/7, which means our award-winning education is always within reach.</p>
+            </div>
+
+            <div class="services-wrapper">
+                <img src="./assets/approved.png" alt="National and State-Approved Curriculum" class="services-image" /> 
+                <p class="services-header">National and State-Approved Curriculum</p>
+                <p class="services-subheader">
+                    Our industry-leading courses combine the classroom environment and online learning with national and state-by-state regulatory requirements.</p>
+                
+            </div>
+
+            <div class="services-wrapper">
+                <img src="./assets/resources.png" alt="online courses" class="services-image" /> 
+                <p class="services-header">Career Resources</p>
+                <p class="services-subheader">Our Agent Essentials and Mortgage Essentials content hubs are full of free resources to help you take your career to the next level.</p>
+            </div>
+        </div>
+        <div id="services-btn-wrapper">
+            <a href="#courses">
+             <button class="services-btn">Start Your Journey</button>
+            </a>
         </div>
     </section>
 
-    <!--Courses Section-->
-    <section>
-        <h2 class="h2">Our Happy Students</h2>
-        <p class="p">See what current and past students at the CE Shop have to say.</p>
-        <div class="three-column-grid">
-            <img src="https://via.placeholder.com/250" alt="real estate courses" class="course-image" /> 
-            <img src="https://via.placeholder.com/250" alt="mortgage courses" class="course-image" /> 
-            <img src="https://via.placeholder.com/250" alt="home inspection courses" class="course-image" /> 
-        </div>
-    </section>
-
-    <!--Courses Section-->
+    <!--Contact Section-->
     <section id="contact">
         <h2 class="h2">Contact Us</h2>
-        <form action="#" id="contact-form">
-            <select name="courses">
-                <option value="default">Course of Interest</option>
-                <option value="Real Estate">Real Estate</option>
-                <option value="Mortgage>">Mortgage</option>
-                <option value="Home Inspection">Home Inspection</option>
+        <hr  />
+        <div class="three-column-grid">
+            <div class="contact-links">
+                <img src="./assets/phone.png" alt="real estate" class="contact-icon" /> 
+                <p class="contact-label">Call Us</p>
+                <p class="contact-src">Corporate: <a class="phone-link" href="#">888.850.0889</a></p>
+                <p class="contact-src">Mortgage: <a class="phone-link" href="#">888.850.0955</a></p>
+                <p class="contact-src">Wholesale: <a class="phone-link" href="#">888.850.0751</a></p>
+            </div>
 
-              </select>
-            <input type="text" placeholder="Name"><br>
-            <input type="email" placeholder="Email"><br>
-            <input type="text" placeholder="Phone Number"><br>
-            <input type="text" placeholder="Message"><br>
-            <input type="submit" value="Submit">
-          </form> 
+            <div class="contact-links">
+                <img src="./assets/email.png" alt="mortgage" class="contact-icon" /> 
+                <p class="contact-label">Email</p>
+                <p class="contact-src">Real Estate: <a class="email-link" href="#">RESupport@TheCEShop.com</a></p><br>
+                <p class="contact-src">Mortgage: <a class="email-link" href="#">MLOSupport@TheCEShop.com</a></p><br>
+                <p class="contact-src">Employment Verification: <a class="email-link" href="#">kim@TheCEShop.com</a></p><br>
+                <p class="contact-src">Corporate: <a class="email-link" href="#">Support@TheCEShop.com</a></p>
+            </div>
+
+            <div class="contact-links">
+                <img src="./assets/location.png" alt="home inspection" class="contact-icon" /> 
+                <p class="contact-label">Location</p>
+                <p class="contact-location">
+                    5670 Greenwood Plaza Blvd., Suite 420
+                    Greenwood Village, CO 80111
+                </p>
+            </div>
+        </div>
     </section>
+
+    <footer>
+        <p id="copyright">© Copyright 2022 TheCEShop.com. All Rights Reserved.</p>
+    </footer>
     
 </body>
 
