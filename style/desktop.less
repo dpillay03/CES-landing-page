@@ -82,74 +82,77 @@ hr {
 }
 
 /* Courses Section */
-#course-subheader {
-  font-size: 17px;
-  color: white;
-}
 .course-containter {
   position: relative;
   width: 250px;
   height: 250px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
+  .course-title {
+    position: absolute;
+    font-size: 20px;
+    top: 93%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    color: white;
+    background-color: #00000069;
+  }
+  #course-subheader {
+    font-size: 17px;
+    color: white;
+  }
+  .course-image {
+    width: 250px;
+    height: 250px;
+  }
+  .course-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: #cd202d;
+  }
+  .course-enrolled {
+    width: 50px;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    z-index: 10;
+    padding: 0;
+  }
 
-.course-image {
-  width: 250px;
-  height: 250px;
+  .course-desc {
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .course-containter:hover .course-overlay {
+    opacity: 1;
+    cursor: pointer;
+  }
 }
-.course-title {
-  position: absolute;
-  font-size: 20px;
-  top: 93%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  text-align: center;
-  padding-top: 10px;
-  color: white;
-  background-color: #00000069;
-}
-.course-overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: 0.5s ease;
-  background-color: #cd202d;
-}
-.course-enrolled {
-  width: 50px;
-  position: absolute;
-  top: -20px;
-  right: -20px;
-  z-index: 10;
-  padding: 0;
-}
-
 .course-containter:hover .course-overlay {
   opacity: 1;
   cursor: pointer;
 }
-
-.course-desc {
-  color: white;
-  font-size: 16px;
-  position: absolute;
-  width: 80%;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
 .course-mobile-subheader {
   visibility: hidden;
 }
+
 /* Email List */
 #email-list {
   margin-top: 100px;
@@ -185,6 +188,7 @@ hr {
     width: 100px;
   }
 }
+
 #services-btn-wrapper {
   background-color: #fff;
   padding: 5px;
@@ -217,23 +221,23 @@ hr {
   text-align: center;
   justify-items: center;
   width: 90%;
-}
-.contact-src {
-  margin: 0 auto;
-  text-align: center;
-  justify-items: center;
-}
-.contact-icon {
-  width: 100px;
-  margin: 0 auto;
-}
-.contact-location {
-  width: 200px;
-  margin: 0 auto;
-}
-.email-link,
-.phone-link {
-  color: #757575;
+  .contact-src {
+    margin: 0 auto;
+    text-align: center;
+    justify-items: center;
+  }
+  .contact-icon {
+    width: 100px;
+    margin: 0 auto;
+  }
+  .contact-location {
+    width: 200px;
+    margin: 0 auto;
+  }
+  .email-link,
+  .phone-link {
+    color: #757575;
+  }
 }
 
 /* Footer */
@@ -243,7 +247,7 @@ footer {
   height: 60px;
   padding: 0px;
   margin: 0px;
-}
-#copyright {
-  margin-top: 40px;
+  #copyright {
+    margin-top: 40px;
+  }
 }
