@@ -1,5 +1,6 @@
 # CES Landing Page
 
+![alt text](/assets/page_screenshot.png "Page Screenshot")
 **Developer:** Daniel Pillay
 
 **Purpose:** Mock Landing Page for Real Estate Monthly. (Coding Challenge)
@@ -26,4 +27,3 @@
 ## Wireframe/Mockup & Final Product
 
 ![alt text](/assets/mockup.png "Mockup")
-![alt text](/assets/page_screenshot.png "Page Screenshot")
