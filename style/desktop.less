@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
   padding: 0;
   margin: 0;
@@ -6,10 +9,16 @@ section {
   max-width: 900px;
   margin: 0 auto;
   text-align: center;
+  margin-top: 100px;
+}
+hr {
+  border-top: 4px solid #cd202d;
+  width: 115px;
+  margin: 0 auto 2rem;
 }
 .three-column-grid {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 2fr 2fr 2fr;
   justify-content: center;
   justify-items: center;
   grid-gap: 50px;
@@ -22,7 +31,7 @@ section {
   background: -webkit-linear-gradient(180deg, #ffffff 0%, #edf3fa 100%);
   background: -moz-linear-gradient(180deg, #ffffff 0%, #edf3fa 100%);
   max-width: 100%;
-  height: 400px;
+  height: auto;
   display: grid;
   gap: 10px;
   padding: 10px;
@@ -35,8 +44,9 @@ section {
     justify-items: center;
     width: 90%;
   }
-  #hero-header #hero-subheader {
+  #hero-header {
     width: 100%;
+    color: #333333;
   }
   #logo {
     width: 300px;
@@ -44,31 +54,196 @@ section {
   #hero-image {
     max-width: 400px;
   }
-}
-
-/* Courses Section */
-#email-list {
-  max-width: 100vw;
-  background-color: #f5f5f5;
-  #course-column-email {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    justify-content: center;
-    justify-items: center;
+  #btn-wrapper {
+    background-color: #fff;
+    padding: 5px;
+    width: 210px;
+    border-radius: 15px;
+    margin: 0 auto;
+    box-shadow: 0 2px 40px 0 rgba(32, 137, 164, 0.38);
+    button {
+      border: 3px solid #2089a4;
+      background: #2089a4;
+      border-radius: 10px;
+      font-size: 15px;
+      color: #ffffff;
+      text-transform: uppercase;
+      letter-spacing: -0.1px;
+      text-align: center;
+      line-height: 20px;
+      padding: calc(1rem - 3px);
+      margin: 0;
+      transition: 0.2s ease-in;
+    }
+    button:hover {
+      cursor: pointer;
+    }
   }
 }
 
-/* reviews */
-#contact-form {
-  display: grid;
-  grid-template-columns: auto;
-  justify-content: center;
+/* Courses Section */
+#course-subheader {
+  font-size: 17px;
+  color: white;
+}
+.course-containter {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.course-image {
+  width: 250px;
+  height: 250px;
+}
+.course-title {
+  position: absolute;
+  font-size: 20px;
+  top: 93%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  padding-top: 10px;
+  color: white;
+  background-color: #00000069;
+}
+.course-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #cd202d;
+}
+.course-enrolled {
+  width: 50px;
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  z-index: 10;
+  padding: 0;
+}
+
+.course-containter:hover .course-overlay {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.course-desc {
+  color: white;
+  font-size: 16px;
+  position: absolute;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.course-mobile-subheader {
+  visibility: hidden;
+}
+/* Email List */
+#email-list {
+  margin-top: 100px;
+  max-width: 100vw;
+  background-color: #f5f5f5;
+
+  #course-column-email {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    justify-content: center;
+  }
+  input {
+    vertical-align: middle;
+    margin: 5px 10px 5px 0;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+  }
+  #email-submit-btn {
+    color: white;
+    background-color: #2089a4;
+  }
+}
+
+/* Why Choose Us */
+.services-wrapper {
+  margin-top: 30px;
+  .services-image {
+    width: 100px;
+  }
+}
+#services-btn-wrapper {
+  background-color: #fff;
+  padding: 5px;
+  width: 200px;
+  border-radius: 15px;
+  margin: 0 auto;
+  box-shadow: 0 2px 40px 0 rgba(32, 137, 164, 0.38);
+  .services-btn {
+    border: 3px solid #2089a4;
+    background: #2089a4;
+    border-radius: 10px;
+    font-size: 15px;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: -0.1px;
+    text-align: center;
+    line-height: 20px;
+    padding: calc(1rem - 3px);
+    margin: 0;
+    transition: 0.2s ease-in;
+  }
+  .services-btn:hover {
+    cursor: pointer;
+  }
+}
+
+/* Contact */
+.contact-links {
+  margin: 0 auto;
+  text-align: center;
+  justify-items: center;
+  width: 90%;
+}
+.contact-src {
+  margin: 0 auto;
+  text-align: center;
   justify-items: center;
 }
-/* Contact */
-#contact-form {
-  display: grid;
-  grid-template-columns: auto;
-  justify-content: center;
-  justify-items: center;
+.contact-icon {
+  width: 100px;
+  margin: 0 auto;
+}
+.contact-location {
+  width: 200px;
+  margin: 0 auto;
+}
+.email-link,
+.phone-link {
+  color: #757575;
+}
+
+/* Footer */
+footer {
+  background-color: #d2d2d2;
+  width: 100%;
+  height: 60px;
+  padding: 0px;
+  margin: 0px;
+}
+#copyright {
+  margin-top: 40px;
 }

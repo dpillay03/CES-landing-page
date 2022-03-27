@@ -1,6 +1,13 @@
 @media only screen and (max-width: 800px) {
+  a {
+    text-decoration: none;
+  }
+  section {
+    width: 95%;
+  }
   #hero {
     max-width: 100%;
+    height: auto;
     display: grid;
     gap: 10px;
     padding: 10px;
@@ -14,9 +21,45 @@
   }
   .three-column-grid {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr;
     justify-content: center;
     justify-items: center;
-    grid-gap: 50px;
+  }
+  .course-containter {
+    display: block;
+    margin-bottom: 10rem;
+  }
+  .course-image {
+    display: block;
+  }
+  a .course-mobile-subheader {
+    visibility: visible;
+    color: #757575;
+  }
+  .course-overlay {
+    visibility: hidden;
+  }
+  #course-column-email {
+    display: flex;
+    flex-flow: wrap;
+    margin: auto;
+    text-align: center;
+  }
+  input {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+  #email-submit-btn {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #copyright {
+    margin-top: 20px;
   }
 }
